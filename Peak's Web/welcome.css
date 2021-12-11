@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    min-height: 100vh;
+    background-image: url(./IMG/BGI.jfif);
+    background-size: cover;
+}
+h1{
+    color: #fff;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 59vw;
+    padding-top: 28vh;
+}
+h2{
+    color: #fff;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 50vw;
+}
+.button {
+    background-color: #F2A7BB;
+    color: white;
+    margin-left: 66vw;
+    margin-top: 5vh;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 5px solid #d36d88; 
+    transition: all 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.button span {
+    display: inline-block;
+    position: relative;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
